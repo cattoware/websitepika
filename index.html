@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pika-Hub</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="pika-cheat.cc">
+    <meta property="og:title" content="Pika Hub">
+    <meta property="og:description" content="Upcoming script hub with large potentials.">
+    <meta property="og:image" content="assets\Layer 2.png">
+    <script>
+        
+
+        function loader(){
+            var loadsound = document.getElementById("LoadAudio");
+            loadsound.play();
+            document.body.style.opacity='1'
+          var style = document.createElement('style');
+          style.innerHTML = `
+            @keyframes FadeOut{
+                0%{opacity:1;}
+                100%{opacity:0;}
+            }
+            @keyframes FadeIn{
+                0%{opacity:0;}
+                100%{ opacity:0.15;}
+            }
+            @keyframes bounceIn{
+                0%{top:-15%;opacity:0;}
+                100%{top:50%;opacity:1;}
+            }
+            @keyframes bounceIn2{
+                0%{top:80%;opacity:0;}
+                50%{top:65%;opacity:0.2;}
+                100%{top:60%;opacity:1;}
+            }
+            .logo{
+                animation-name:bounceIn;
+                animation-duration:1000ms;
+                animation-timing-function:ease;
+                opacity:1;
+                
+            }
+            .mr-pool{
+                animation-name:bounceIn2;
+                animation-duration:1000ms;
+                animation-timing-function:ease-in;
+                opacity:1;
+            }
+            .loader-container{
+                opacity:1;
+                animation-name:FadeOut;
+                animation-duration:1000ms;
+                animation-delay: 1000ms;
+                animation-timing-function:ease;
+                
+
+            }
+            .main{
+                opacity:0;
+                transition-delay:2100ms;
+                transition 2000ms; 
+                opacity:1;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                left:50%;
+                top:50%;
+            }
+            .bg{
+                opacity:0;
+                transition:10s;
+                opacity:0.15;
+            }
+          `;
+          document.head.appendChild(style);
+          var element = document.getElementById("bgvideo");
+          element.play();
+          
+          setTimeout(() => {
+                var element = document.getElementById("loader-container");
+                element.remove(); 
+                var element = document.getElementById("LoadAudio");
+                element.remove(); 
+                var element = document.getElementById("music");
+
+                element.play();
+                element.volume = 5;
+            }, 1750);
+        }
+        
+        
+    </script>
+
+</head>
+<body onload = "loader()">
+    <div class="bg" style = "position: absolute;z-index: 0;"></div>
+    <div class="bg">
+        <video id="bgvideo" loop>
+            
+          <source src="https://cdn.discordapp.com/attachments/766161411909877761/847735488201752616/2021-05-28_14-17-19.mp4" type="video/mp4" alt="videolol"/>
+          <script>
+            const vid = document.getElementById('bgvideo');
+            app.videoElement = vid;
+          </script>
+        </video>
+    </div>
+
+      <audio id="music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+      </audio>
+
+    <!--It will be deleted l8ter-->
+    <audio id="LoadAudio">
+        <source src="assets/loadsound.mp3" type="audio/mpeg">
+      </audio>
+      <div class="loader-container" id = "loader-container">
+        <img src="assets/Layer 2.png" class="logo" alt="">
+        <h1 class="mr-pool">"ohayo, daddy!"</h1>
+      </div>
+    <!--It will be deleted l8ter-->
+      
+
+      <div class="main">
+        <p class="title" >Pika Hub
+            <p class="desc">Upcoming script hub with large potentials.</p>
+        </p>
+        
+        <button class="pika-btn" onclick="location.href = 'discord.html'">Discord</button>
+      </div>
+
+
+
+</body>
+</html>
