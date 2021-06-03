@@ -1,0 +1,108 @@
+body {
+  background: #1e1e1e;
+  font-family: 'Lexend';
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  z-index: 10;
+}
+
+.mr-pool {
+  position: absolute;
+  color: palevioletred;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 60%;
+  opacity: 0;
+  min-width: 250px !important;
+  z-index: 10;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  min-width: 100% !important;
+  opacity: 0;
+}
+
+.main .title {
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+.main .desc {
+  font-weight: bolder;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.pika-btn {
+  background: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  width: 105px;
+  height: 45px;
+  border: none;
+  -webkit-box-shadow: 0 2px 25px palevioletred;
+          box-shadow: 0 2px 25px palevioletred;
+  background: palevioletred;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.pika-btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.pika-btn:active {
+  -webkit-transform: scale(1.2, 1);
+          transform: scale(1.2, 1);
+}
+/*# sourceMappingURL=style.css.map */
